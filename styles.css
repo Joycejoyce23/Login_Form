@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Sans serif';
+    color: white;
+}
+
+.background {
+    height: 100vh;
+    background-image: url(img/background.jpeg);
+    background-color:rgba(0, 0, 0, 0.1) ;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.login-container {
+    border: white solid 2px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 400px;
+    backdrop-filter: blur(3px);
+    box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.login-box {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+header {
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.nested-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.65rem;
+    width: 100%;
+    font-weight: 600;
+}
+
+input[type=email],
+input[type=password] {
+    height: 40px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 35px;
+    border: white solid 1px;
+    background-color: transparent;
+    font-size: 0.9rem;
+    font-weight: 100;
+    border-radius: 20px;
+    outline: none;
+
+}
+
+input[type=checkbox]{
+    vertical-align: middle;
+    accent-color: white;
+    cursor: pointer;
+}
+
+input[type=email]::placeholder,
+input[type=password]::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+.forgot-password {
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.text-input{
+    width: 100%;
+    position: relative;
+}
+
+.text-input i{
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    font-size: 15px;
+}
+
+input[type=submit] {
+    width: 100%;
+    padding: 10px;
+    border: white solid 1px;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 0.8rem;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+input[type=submit]:hover{
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1) inset;
+}
+
+.register-box {
+    font-size: 0.65rem;
+    font-weight: 300;
+}
+
+.register {
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (width < 600px){
+    .login-container{
+        width: 300px;
+    }
+}
